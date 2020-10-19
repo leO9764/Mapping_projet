@@ -3,7 +3,6 @@ ref = "ATATCGT"
 def suffixArray(s):
 	''' creation du suffixe array avec leurs rangs ordonnés ''' 
 	satups = sorted([(s[i:], i) for i in range(0, len(s)+1)])
-	print(map(lambda x: x[1], satups))
 	return map(lambda x: x[1], satups)
 
 suffixArray(ref)
